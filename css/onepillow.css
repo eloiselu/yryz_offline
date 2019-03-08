@@ -1,0 +1,103 @@
+body {
+    background-color: #442c2b;
+}
+
+/*模块名称部分*/
+.head-name {
+    background-color: #442c2b;
+    text-align: center;
+    color: #eeb7a3;
+}
+
+.onepillow-head {
+    display: inline-block;
+    width: 9.95rem;
+    background-color: #32171c;
+    font-size: 1.24rem;
+    text-align: center;
+    border-radius: 2.2rem;
+    margin-top: 2.09rem;
+    height: 4.38rem;
+    /* line-height: 3.07rem; */
+    line-height: normal;
+}
+
+.onepillow-text {
+    margin-top: 0.5rem;
+}
+
+.head-back {
+    margin-top: 0;
+}
+
+/*主体部分*/
+.main {
+    text-align: center;
+    background-color: #442c2b;
+    color: #d9a18f;
+}
+
+.main .onepillow {
+    padding-top: 1rem;
+}
+
+/*title部分*/
+.main .onepillow-title {
+    font-size: 1.3rem;
+    padding-top: 1.94rem;
+}
+
+.main .onepillow-subtitle {
+    font-size: 1.88rem;
+    margin-top: 1.1rem;
+}
+
+/*图片部分*/
+.main .onepillow-img {
+    width: 18.12rem;
+    padding-top: 0.5rem;
+}
+
+/*底部文字*/
+.onepillow-foot {
+    width: 19.22rem;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 2.32rem;
+    font-size: 0.52rem;
+}
+
+/*第二屏轮播*/
+.carousel-2 {
+    background-color: #6d5a5a;
+    padding-bottom: 4.2rem;
+    padding-top: 3.88rem;
+    margin-top: 5rem;
+    margin: auto 0;
+}
+
+.carousel-2 .introduce-text {
+    text-align: left;
+    width: 16.8rem;
+    font-size: 0.8rem;
+    margin: 0 auto;
+}
+
+/*第三屏轮播*/
+.carousel-1 {
+    background-color: #1b0706;
+}
+
+.carousel-1 .sleep-img {
+    width: 100%;
+}
+
+/*视频*/
+
+.carousel-video {
+    /*margin-top: 5rem;*/
+}
+
+.sorter span {
+    background: #000;
+}

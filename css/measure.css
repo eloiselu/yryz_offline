@@ -1,0 +1,80 @@
+body {
+    background-color: #442c2b;
+}
+
+/*主题部分*/
+.main {
+    background-color: #442c2b;
+    color: #efb588;
+    text-align: center;
+}
+.main  .head-back {
+    margin-top:0;
+}
+
+/*曲线测量部分*/
+.measure-title {
+    display: inline-block;
+    width: 9.95rem;
+    height: 3.07rem;
+    line-height: 3.07rem;
+    background-color: #32171c;
+    font-size: 1.24rem;
+    text-align: center;
+    border-radius: 2.2rem;
+    margin-top: 1.96rem;
+}
+
+/*图片文字*/
+.measure-title-img {
+    display: block;
+    width: 6.24rem;
+    height: 0.96rem;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+/*图片人物*/
+.measure-img {
+    width: 14.63rem;
+    height: 10.46rem;
+    margin-top: 1.63rem;
+    cursor:pointer; /*变小手*/
+}
+
+/*文字描述*/
+.measure-describe {
+    font-size: 0.7rem;
+    margin-top: 1.9rem;
+}
+
+.measure-subdescribe {
+    font-size: 1.24rem;
+    margin-top: 0.62rem;
+}
+
+/*底部模块部分*/
+.measure-foot {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/*开始测量按钮*/
+.measure-button {
+    display: inline-block;
+    width: 7.27rem;
+    height: 1.87rem;
+    color: #efb588;
+    /*line-height: 1.87rem;*/
+    background-color: #32171c;
+    border-radius: 2.2rem;
+    font-size: 0.5rem;
+    padding-top: 0.2rem;
+    margin: 0 auto;
+    margin-top: 2.0rem;
+    cursor:pointer; /*变小手*/
+}
+
+.step-right {
+    margin-left: 1.86rem;
+}

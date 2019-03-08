@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>曲线测量-第5步 我的曲线</title>
+
+    <meta name="Keywords" content=""/>
+    <meta name="Description" content=""/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+
+    <!--禁止IOS识别号码 -->
+    <meta content="email=no" name="format-detection"/>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+
+    <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../plugins/loaders/loaders.css">
+    <link rel="stylesheet" href="../css/measure-step5.css">
+    <!--Font Awesome字体图标-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!--固定头部-->
+<div class="head-common">
+    <img class="head-img" src="../images/head-img.png" alt="">
+    <div class="head-text-wrap">
+        <img class="head-text" src="../images/head-text.png" alt="">
+    </div>
+</div>
+
+
+<!--主体部分-->
+<div class="main">
+    <!--等待加载数据部分-->
+    <div class="load-model">
+        <!--英文Calculating部分-->
+        <div class="measure-step1-Cal">
+            <p>Calculating</p>
+            <img src="../images/calculating.gif" alt="">
+        </div>
+
+        <!--曲线测量计算中部分-->
+        <p class="measure-step1-subCal">曲线提取计算中</p>
+
+        <img class="measure-step1-subimg" src="../images/measure-step1-subimg.png" alt="">
+    </div>
+
+    <!--我的曲线测量模块部分-->
+    <div class="head-name">
+        <span class="head-back"><i class="fa fa-angle-left"></i></span>
+        <span class="measure-step5-title">我的曲线</span>
+    </div>
+
+    <div class="measure5-curve fix">
+        <!--左边头像和人物-->
+        <div class="measure5-curve-left">
+            <!--头像-->
+            <div class="curve-profile">
+                <img id="avatarImg" src="" alt="">
+            </div>
+            <!--曲线图-->
+            <div class="curve-person">
+                <!--侧面曲线图-->
+                <canvas id="sideImg"></canvas>
+            </div>
+        </div>
+        <!--右边测量数据-->
+        <div class="measure5-curve-right">
+            <ul>
+                <!--头部高度-->
+                <li>
+                    <!--数据部分-->
+                    <div class="data-height">
+                        <span class="data-height-text">头部高度</span>
+                        <span class="data-height-num" id="acNum"></span>
+                    </div>
+                    <!--刻度部分-->
+                    <div class="strip-wrap">
+                        <!--刻度进度条部分-->
+                        <div class="strip">
+                            <!--进度条背景-->
+                            <div class="strip-bar-back">
+                                <!--进度条-->
+                                <div class="strip-bar" id="acBar">
+                                    <img class="strip-dot" src="../images/measure-step5-dotimg.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--刻度文字-->
+                        <div class="strip-text"></div>
+                    </div>
+                </li>
+                <!--颈部高度-->
+                <li>
+                    <!--数据部分-->
+                    <div class="data-height">
+                        <span class="data-height-text">颈部高度</span>
+                        <span class="data-height-num" id="bcNum"></span>
+                    </div>
+                    <!--刻度部分-->
+                    <div class="strip-wrap">
+                        <!--刻度进度条部分-->
+                        <div class="strip">
+                            <!--进度条背景-->
+                            <div class="strip-bar-back">
+                                <!--进度条-->
+                                <div class="strip-bar" id="bcBar">
+                                    <img class="strip-dot" src="../images/measure-step5-dotimg.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--刻度文字-->
+                        <div class="strip-text"></div>
+                    </div>
+                </li>
+                <!--头颈高度差-->
+                <li>
+                    <!--数据部分-->
+                    <div class="data-height">
+                        <span class="data-height-text">头颈高度差</span>
+                        <span class="data-height-num" id="headNeckNum"></span>
+                    </div>
+                    <!--刻度部分-->
+                    <div class="strip-wrap">
+                        <!--刻度进度条部分-->
+                        <div class="strip">
+                            <!--进度条背景-->
+                            <div class="strip-bar-back">
+                                <!--进度条-->
+                                <div class="strip-bar" id="headNeckBar">
+                                    <img class="strip-dot" src="../images/measure-step5-dotimg.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--刻度文字-->
+                        <div class="strip-text"></div>
+                    </div>
+                </li>
+                <!--头肩距离-->
+                <li>
+                    <!--数据部分-->
+                    <div class="data-height">
+                        <span class="data-height-text">头肩距离</span>
+                        <span class="data-height-num" id="headShoulderNum"></span>
+                    </div>
+                    <!--刻度部分-->
+                    <div class="strip-wrap">
+                        <!--刻度进度条部分-->
+                        <div class="strip">
+                            <!--进度条背景-->
+                            <div class="strip-bar-back">
+                                <!--进度条-->
+                                <div class="strip-bar" id="headShoulderBar">
+                                    <img class="strip-dot" src="../images/measure-step5-dotimg.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--刻度文字-->
+                        <div class="strip-text"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--底部模块部分-->
+    <div class="measure-step5-foot">
+        <a href="../view/report.html" class="measure5-link">
+            <p class="foot-top">Report</p>
+            <p class="foot-down">生成报告</p>
+        </a>
+
+        <a href="../view/userlist.html" class="measure5-link">
+            <p class="foot-top">List</p>
+            <p class="foot-down">数据列表</p>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+<script src="../js/jQuery-2.1.4.min.js"></script>
+<script src="../plugins/layer/layer.js"></script>
+<script src="../plugins/pdfJs/pdf.js"></script>
+<script src="../plugins/pdfJs/pdf.worker.js"></script>
+<!--<script src="../plugins/loaders/loaders.css.js"></script>-->
+<script src="../js/flexible.js"></script>
+<script src="../js/ajaxUtil.js"></script>
+<script src="../js/commonJs.js"></script>
+<script src="../js/goBack.js"></script>
+<script src="../js/measure-step5.js"></script>
+</html>

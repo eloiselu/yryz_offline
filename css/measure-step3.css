@@ -1,0 +1,92 @@
+body {
+    background-color: #442c2b;
+}
+
+.head-name .head-back {
+    margin-top: 0;
+}
+
+.measure-step3-take {
+    display: inline-block;
+    width: 3.02rem;
+    height: 3.02rem;
+    /* padding-top: 2rem; */
+    /* box-sizing: content-box; */
+    vertical-align: bottom;
+    margin-left: .5rem;
+}
+
+.measure-step3-take img {
+    width: 100%;
+    height: 100%;
+}
+
+/*主体模块部分*/
+.main {
+    /*background-color: #442c2b;*/
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*bottom: 0;*/
+    position: relative;
+    margin-top: .8rem;
+}
+
+/*拍照部分*/
+.photograph {
+    height: 27rem;
+}
+
+/*摄像头*/
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 100%;*/
+    height: 37.76rem;
+    height: 27rem;
+    /*object-fit: cover;*/
+}
+
+.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 100%;*/
+    /*height: 37.76rem;*/
+}
+
+.picture {
+    /*width: 100%;*/
+    /*height: 37.76rem;*/
+}
+
+/*人物图片*/
+.measure-step3-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: 37.76rem;*/
+    height: 27rem;
+    vertical-align: middle; /*清除图片底部边框问题*/
+    /*background: #fff;*/
+    opacity: .6;
+    filter: alpha(opacity=0.6);
+}
+
+/*底部相机按钮图片*/
+.measure-step3-camera {
+    background-color: #d9cfbb;
+    text-align: center;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+}
+
+.measure-step3-camera a {
+    display: inline-block;
+}
+
+.measure-step3-camera img {
+    width: 3.15rem;
+    height: 3.15rem;
+}

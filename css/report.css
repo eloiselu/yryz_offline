@@ -1,0 +1,131 @@
+/*曲线报告部分*/
+.head-name {
+    padding-top: 1rem;
+}
+
+.head-back {
+    margin-top: -.6rem;
+}
+.report-head {
+    display: inline-block;
+    font-size: 1.23rem;
+    color: #bc9d93;
+}
+
+.report-code {
+    display: inline-block;
+    width: 3.78rem;
+    height: 3.78rem;
+    background-color: #2e1314;
+    position: absolute;
+    right: 3rem;
+}
+
+.report-code img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*左边头像和人物*/
+.report-curve-left{
+    padding-left: 1.34rem;
+    float: left;
+    padding-top: 3.83rem;
+}
+/*头像*/
+.curve-profile {
+    width: 4.65rem;
+    height: 4.65rem;;
+    background-color: #6d4e40;
+    border-radius: 2.58rem;
+    margin-left: .5rem;
+}
+
+.curve-profile #avatarImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+/*人物*/
+.curve-person {
+    width: 5.68rem;
+    height: 16.4rem;
+    /*background-color: #6d4e40;*/
+    margin-top: 1.3rem;
+    overflow: hidden;
+}
+
+/*右边测量数据*/
+.report-curve-right {
+    float: left;
+    margin-left: 1rem;
+}
+
+/*数据部分*/
+.data-height {
+    text-align: center;
+    font-size: 0.74rem;
+    padding-top: 1.5rem;
+}
+
+.data-height-text {
+    display: inline-block;
+    width: 7.4rem;
+    height: 1.52rem;
+    line-height: 1.52rem;
+    background-color: #30181c;
+    color: #e1b397;
+    border-radius: 1.8rem;
+}
+
+.data-height-num {
+    display: inline-block;
+    width: 4.52rem;
+    height: 1.48rem;
+    line-height: 1.48rem;
+    background-color: #9f786c;
+    color: #1e0d06;
+    border-radius: 1.8rem;
+    margin-left: .4rem;
+    vertical-align: middle;
+}
+
+/*数据描述*/
+.data-text {
+    font-size: .62rem;
+    color: #bc9d93;
+    text-align: left;
+    margin-left: 1.24rem;
+    margin-top: .5rem;
+}
+
+.data-text p {
+    width: 12.72rem;
+}
+
+/*底部部分*/
+.report-foot {
+    color: #bc9d93;
+    background-color: #2e1314;
+    font-size: .46rem;
+    margin-top: 2rem;
+}
+
+.report-foot .report-foot-title {
+    font-size: 1.34rem;
+    padding-top: .2rem;
+}
+
+.report-foot .report-foot-subtitle {
+    font-size: .5rem;
+}
+
+.report-foot .report-foot-text {
+    text-align: left;
+    width: 17.1rem;
+    margin: 0 auto;
+    margin-top: .3rem;
+    padding-bottom: 1rem;
+}

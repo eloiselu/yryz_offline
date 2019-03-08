@@ -1,0 +1,86 @@
+body {
+    background-color: #442c2b;
+}
+
+.main {
+    text-align: center;
+    background-color: #442c2b;
+}
+
+/*选择枕头*/
+.sugges-pillow {
+    padding-top: 2rem;
+}
+
+.pillow {
+    margin-top: 1.2rem;
+}
+
+.sugges-pillow p {
+    color: #e2c0a8;
+    font-size: .86rem;
+}
+
+.sugges-pillow img {
+    height: .5rem;
+    padding-right: .34rem;
+    vertical-align: middle;
+}
+
+.sugges-pillow .sugges-fullLink {
+    margin-top: 1.8rem;
+}
+
+.sugges-pillow .sugges-link {
+    display: inline-block;
+    min-height: 1.22rem;
+    min-width: 3.78rem;
+    color: #eec2a9;
+    background-color: #30191d;
+    text-align: center;
+    font-size: .36rem;
+    border-radius: 5.22rem;
+    margin: 0 .14rem 0 .14rem;
+    padding: .3rem .8rem;
+}
+
+.sugges-pillow .sugges-fullLink a:hover {
+    color: #241208;
+    background-color: #a0786c;
+}
+
+.sugges-pillow .sugges-link.active {
+    color: #241208;
+    background-color: #a0786c;
+}
+
+.sugges-pillow  .sugges-choose {
+    line-height: 1.22rem;
+}
+
+.sugges-pillow .sugges-link .sugges-text {
+    font-size: .56rem;
+}
+
+/*选择按钮*/
+.suggesction {
+    text-align: center;
+}
+
+.suggesction .suggesction-link {
+    display: block;
+    height: 2.7rem;
+    width: 7.42rem;
+    background-color: #efb588;
+    color: #241208;
+    font-size: .8rem;
+    border-radius: 2.7rem;
+    margin: 0 auto;
+    margin-top: 3.33rem;
+    margin-bottom: 5rem;
+}
+
+.suggesction .suggesction-link  .suggesction-text {
+    font-size: .8rem;
+    padding-top: .2rem;
+}

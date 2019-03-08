@@ -1,0 +1,55 @@
+body {
+    background-color: #442c2b;
+}
+
+/*模块名称部分*/
+.head-name {
+    background-color: #442c2b;
+    text-align: center;
+    color: #eeb7a3;
+}
+
+/*曲线测量部分*/
+.measure-step1-title     {
+    display: inline-block;
+    width: 9.95rem;
+    height: 3.07rem;
+    line-height: 3.07rem;
+    background-color: #32171c;
+    font-size: 1.24rem;
+    text-align: center;
+    border-radius: 2.2rem;
+    margin-top: 2.09rem;
+}
+
+/*主体模块部分*/
+.main {
+    background-color: #442c2b;
+    text-align: center;
+    color: #eeb7a3;
+}
+
+/*英文Calculating部分*/
+.measure-step1-Cal{
+    font-size: 1.66rem;
+    padding-top: 9.97rem;
+    padding-bottom: 2.37rem;
+    border-bottom: 0.13rem solid #a77e71;
+}
+
+.measure-step1-Cal p {
+    display: inline-block;
+}
+
+/*曲线测量计算中部分*/
+.measure-step1-subCal {
+    padding-top: 1.2rem;
+    font-size: 1.28rem;
+}
+
+/**/
+.measure-step1-subimg {
+    width: 6.07rem;
+    height: 0.89rem;
+    margin-top: 0.6rem;
+}

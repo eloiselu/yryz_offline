@@ -1,0 +1,137 @@
+body {
+    background-color: #ffffff;
+}
+
+/*内容*/
+.head-name {
+    background-color: #442C2B;
+    padding: 0.7rem 0;
+    text-align: center;
+}
+
+.texture-detail1 {
+    width: 13.06rem;
+    height: 4.36rem;
+    line-height: 4.36rem;
+    display: inline-block;
+    background-color: #32171c;
+    font-size: 1.69rem;
+    color: #d9a18f;
+    border-radius: 2.2rem;
+}
+
+/*主体部分*/
+.main {
+    background-color: #fff;
+}
+
+/*顶部图片1*/
+.texture-head1 {
+    width: 100%;
+}
+
+/*顶部图片2*/
+.texture-head2 {
+    width: 100%;
+}
+
+/*中间材质部分*/
+.texture-name-wrap {
+    margin: 0.2rem 0;
+    text-align: center;
+}
+
+.texture-name-img {
+    width: 3.74rem;
+    vertical-align: middle;
+}
+
+.texture-name {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1.45rem;
+    text-align: left;
+}
+
+.texture-title {
+    font-size: 0.72rem;
+}
+
+.texture-subtitle {
+    font-size: 0.72rem;
+}
+
+.texture-color {
+    font-size: 0.72rem;
+    color: #666;
+}
+
+/*介绍部分*/
+.texture-text-wrap {
+    width: 100%;
+    padding: 3rem .15rem 3rem 1rem;
+    /*background: url("../images/textureDetail-back.png");*/
+}
+
+/*每一行*/
+.texture-text-line {
+    /*设为伸缩容器*/
+    display: flex;
+    /*伸缩项目单行排列*/
+    flex-flow: row;
+    margin-bottom: 1rem;
+}
+
+/*左侧名称部分*/
+.texture-text-name {
+    /*固定宽度*/
+    width: 5rem;
+}
+
+.texture-name-title {
+    font-size: 0.76rem;
+    font-weight: 700;
+}
+
+.texture-name-subtitle {
+    font-size: 0.6rem;
+}
+
+/*右侧描述部分*/
+.texture-desc {
+    /*这里设置为占比1，填充满剩余空间*/
+    flex: 1;
+    padding-right: 1rem;
+    /*margin-left: 4.36rem;*/
+}
+
+/*描述文字样式*/
+.texture-desc p {
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+/*硬度与弹性图片*/
+.texture-desc img {
+    width: 100%;
+}
+
+
+/*底部按钮*/
+.foot-btn {
+    text-align: center;
+    padding-bottom: 1.4rem;
+}
+
+.foot-btn .btn {
+    display: inline-block;
+    background-color: #32171c;
+    width: 11.5rem;
+    height: 1.94rem;
+    line-height: 1.94rem;
+    font-size: 1rem;
+    color: #efb588;
+    border-radius: 2rem;
+}
+

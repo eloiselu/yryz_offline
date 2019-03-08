@@ -1,0 +1,85 @@
+body {
+	background-color: #442c2b;
+}
+
+.main {
+	text-align: center;
+	background-color: #442c2b;
+}
+
+.age-title {
+	color: #e9b88f;
+	font-size: 1rem;
+	padding-top: 3rem;
+	display: block;
+}
+
+.age-subtitle {
+	color: #e2c0a8;
+	font-size: .86rem;
+	margin-top: 2.8rem;
+	margin-bottom: .6rem;
+	display: block;
+}
+
+.age-subtitle img {
+	height: .5rem;
+	padding-right: .34rem;
+	vertical-align: middle;
+}
+
+.full-link a:hover {
+	color: #333333;
+	background-color: #9f776c;
+}
+
+.age-choose {
+	color: #eec2a9;
+	background-color: #30191d;
+	width: 7.9rem;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	margin: 1rem auto;
+	border-radius: 1.8rem;
+	display: block;
+	font-size: .8rem;
+}
+
+.age-choose.active {
+	color: #333333;
+	background-color: #9f776c;
+}
+	/*精选*/
+.age-choice {
+	margin-top: 1.2rem; 
+	margin-bottom: 5rem;
+}
+
+.age-choice .choice {
+	display: inline-block;
+	width: 5.22rem;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	background-color: #30191d;
+	color: #eec2a9;
+	text-align: center;
+	border-radius: 1.8rem;
+	position: relative;
+	margin-left: 2rem;
+}
+
+.age-choice .choice.active {
+	color: #333333;
+	background-color: #9f776c;
+}
+
+.age-choice .choice img {
+	height: 1.5rem;
+	position: absolute;
+	left: -.62rem;
+	top: -.8rem;
+}
+
+.age-choice .choice p {
+	font-size: .8rem;
+}

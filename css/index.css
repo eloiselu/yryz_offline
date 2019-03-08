@@ -1,0 +1,93 @@
+body {
+    background-color: #392524;
+    text-align: center;
+    color: #d9a18f;
+}
+
+.main {
+    margin-top: 0.9rem;
+}
+
+.index-first {
+    padding-top: 4rem;
+}
+
+.logo {
+    width: 14.02rem;
+    height: 10.46rem;
+    margin-top: 0.98rem;
+}
+
+.logo-img {
+    width: 13.97rem;
+    height: 3.11rem;
+    margin-top: 1.5rem;
+}
+
+.title {
+    font-size: 1.09rem;
+    margin-top: .9rem;
+}
+
+.subtitle {
+    font-size: 1.57rem;
+    margin-top: .9rem;
+}
+
+/*轮播*/
+.carousel .select-img {
+    width: 100%;
+}
+
+/*导航*/
+.carousel-nav {
+    position: relative;
+}
+
+.carousel-nav .car-nav {
+    position: absolute;
+    top: 6.73rem;
+    /*left: 5.9rem;*/
+}
+
+.carousel-nav .nav-link {
+    display: inline-block;
+    /*background-color: #44282d;*/
+    background: RGBA(57, 37, 36, 0.85);
+    width: 13.08rem;
+    height: 4.4rem;
+    font-size: 1.32rem;
+    color: #d9a18f;
+    border-radius: 2.2rem;
+    margin-top: 2.56rem;
+}
+
+.carousel-nav .nav-title {
+    padding-top: 0.2rem;
+}
+
+.sorter span{
+    background: #000;
+}
+
+
+/*视频*/
+
+.main .carousel-video {
+    width: 24.94rem;
+ }
+
+.carousel-video {
+    /*margin-top: 5rem;*/
+    /*height: 38.59rem;*/
+}
+
+/*video {*/
+    /*object-fit:fill;*/
+    /*width:100%;*/
+    /*height:100%;*/
+/*}*/
+
+.sorter span {
+    background: #000;
+}

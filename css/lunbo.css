@@ -1,0 +1,161 @@
+/*重写轮播图选中点的颜色*/
+.swiper-pagination-bullet-active {
+    background: #999;
+}
+
+/*轮播图部分*/
+.swiper-container {
+    width: 100%;
+    height: 840px;
+}
+
+/*第一屏轮播图部分*/
+.carousel-1 {
+    height: 100%;
+    background-color: #fff;
+}
+
+.carousel-1 .carousel-1-top {
+    width: 100%;
+    height: 368px;
+}
+
+.carousel-1-bottom {
+    position: relative;
+    margin-top: 30px;
+}
+
+.carousel-1 .carousel-1-left {
+    width: 600px;
+}
+
+.carousel-1 .carousel-1-line {
+    position: absolute;
+    top: 200px;
+    left: 580px;
+    width: 150px;
+    height: 1px;
+    background-color: #000;
+}
+
+.carousel-1 .carousel-1-right {
+    position: absolute;
+    top: 30px;
+    right: 70px;
+    width: 478px;
+
+}
+
+/*第二屏轮播图部分*/
+.carousel-2 {
+    height: 100%;
+    background: url("../images/carousel-2-back.png") no-repeat center;
+    background-size: cover;
+}
+
+.carousel-2-title-wrap {
+    width: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.6);
+    margin-top: 230px;
+    padding: 30px 180px;
+}
+
+.carousel-2 .carousel-2-title {
+    width: 248px;
+}
+
+.carousel-2 .carousel-2-text {
+    font-size: 28px;
+    color: #835f41;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/*第三屏轮播图部分*/
+.carousel-3 {
+    height: 100%;
+    background: url("../images/carousel-3-back.png") no-repeat center;
+    background-size: cover;
+}
+
+.carousel-3 .carousel-3-left {
+    float: left;
+    width: 610px;
+    text-align: center;
+    margin-top: 260px;
+}
+
+.carousel-3 .carousel-3-title {
+    margin-bottom: 10px;
+}
+
+.carousel-3 .carousel-3-text1 {
+    margin-bottom: 15px;
+}
+
+.carousel-3 .carousel-3-img {
+    float: left;
+    width: 569px;
+    margin-top: 60px;
+}
+
+/*首页初衷展示部分*/
+.intention {
+    width: 100%;
+}
+
+/*顶部图片*/
+.intention .vcollection-wrap {
+    width: 100%;
+    height: 650px;
+    background: url("../images/assistant-img-cheese.png");
+    text-align: center;
+    padding-top: 60px;
+    margin-top: -5px;
+}
+
+/*文字描述部分*/
+.intention .intention-text,
+.intention .intention-desc {
+    width: 100%;
+    color: #fff;
+}
+
+.intention .intention-text {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intention .intention-desc {
+    font-size: 22px;
+}
+
+/*图片部分*/
+.intention .vcollection-wrap .vcollection {
+    width: 600px;
+    margin-top: 50px;
+}
+
+/*初衷底部*/
+.intention-bottom {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    background-color: #e0d9d6;
+}
+
+/*初衷底部文本部分*/
+.intention-bottom-title {
+    font-size: 30px;
+}
+
+.intention-bottom-text {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.intention-bottom-qrcode {
+    width: 180px;
+    margin-top: 20px;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>产品购物页</title>
+
+    <meta name="Keywords" content=""/>
+    <meta name="Description" content=""/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+
+    <!--禁止IOS识别号码 -->
+    <meta content="email=no" name="format-detection"/>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+
+    <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="../css/commen.css">
+    <!--<link rel="stylesheet" href="../css/measure-step2.css">-->
+    <link rel="stylesheet" href="../css/products-introduction.css">
+    <!--Font Awesome字体图标-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<!--固定头部-->
+<div class="head-common">
+    <span class="head-back"><i class="fa fa-angle-left"></i></span>
+    <img class="head-img" src="../images/head-img.png" alt="">
+    <div class="head-text-wrap">
+        <img class="head-text" src="../images/head-text.png" alt="">
+    </div>
+</div>
+
+<!--模块名称部分-->
+<!--<div class="head-name">-->
+<!--<span class="measure-step2-title products-head">儿童 (3-6岁)</span>-->
+<!--</div>-->
+
+<!--主体部分-->
+<div class="main">
+    <!--图片介绍-->
+    <!--<div class="pro-img">-->
+        <!--<img class="products-img" src="../images/productsIntroduction-img-white.png" alt="">-->
+        <!--<div class="products-imgtext">7天无忧退货<span class="imgtext-hg">-</span>48小时极速退款<span class="imgtext-hg">-</span>满200元免邮费</div>-->
+
+    <!--</div>-->
+    <!--&lt;!&ndash;商品描述&ndash;&gt;-->
+    <!--<div class="products-describe">-->
+        <!--<p class="products-title">智能测量＋专属调节</p>-->
+        <!--<p class="products-subtitle">浅灰色3D网TPE弹性体枕 TPE Elastomer</p>-->
+        <!--<p class="products-text">可水洗TPE弹性粒子 热销 20万件</p>-->
+        <!--<div class="products-select">-->
+            <!--<a href="javascript:;" class="pro-link">更多选择</a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;请选择规格数量&ndash;&gt;-->
+    <!--<div class="products-specification">-->
+        <!--<span class="specification-num">请选择规格数量</span>-->
+        <!--<span class="specification-gt"><a href="javascript:;" class="fa fa-chevron-right"></a></span>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;商品参数&ndash;&gt;-->
+    <!--<div class="products-parameter">-->
+        <!--<p class="parameter-text">商品参数</p>-->
+    <!--</div>-->
+    <div class="pro-img">
+        <img class="products-img" src="" alt="">
+        <div class="products-imgtext">
+            7天无忧退货
+            <span class="imgtext-hg">-</span>
+            48小时极速退款
+            <span class="imgtext-hg">-</span>
+            满200元免邮费
+        </div>
+    </div>
+    <!--商品描述-->
+    <div class="products-describe ">
+        <!--标题-->
+        <p class="products-title"></p>
+        <!--副标题-->
+        <p class="products-subtitle"></p>
+        <!--描述-->
+        <p class="products-text"></p>
+        <div class="products-select">
+            <a href="texture.html" class="pro-link">更多选择</a>
+        </div>
+    </div>
+    <!--请选择规格数量-->
+    <div class="products-specification">
+        <!--添加数量部分-->
+        <div class="choose-num">
+            <span>数量：</span>
+            <a href="javascript:;" class="num-btn forbidden" id="minusNum" data-type="minus">-</a>
+            <input type="text" class="num-text" id="numText" value="1" readonly="readonly">
+            <a href="javascript:;" class="num-btn" id="addNum" data-type="add">+</a>
+        </div>
+        <!--加入购物车按钮-->
+        <button class="shopping-btn" id="shoppingBtn">加入购物车</button>
+
+        <!--<span class="specification-num">请选择规格数量</span>-->
+        <!--<span class="specification-gt"><a href="javascript:;" class="fa fa-chevron-right"></a></span>-->
+    </div>
+    <!--商品参数-->
+    <div class="products-parameter">
+        <p class="parameter-text">商品参数</p>
+    </div>
+</div>
+
+<!--弹框-->
+<div class="pop-shade" id="popShade"></div>
+<!--选择购物数量弹框-->
+<div class="pop-module">
+    <div class="pop-close" id="popClose"></div>
+</div>
+
+</body>
+<script src="../js/jQuery-2.1.4.min.js"></script>
+<script src="../js/flexible.js"></script>
+<script src="../js/commonJs.js"></script>
+<script src="../js/goBack.js"></script>
+<script src="../js/products-introduction.js"></script>
+</html>

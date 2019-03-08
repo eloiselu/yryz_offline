@@ -1,0 +1,47 @@
+body{
+    position: relative;
+    background-color: #442c2b;
+}
+
+.main {
+    text-align: center;
+
+}
+
+.select-img {
+    /*background: url("../images/select-img.png");*/
+    /*background-size:24.94rem 40.24rem;*/
+    width: 24.94rem;
+    height: 40.24rem;
+}
+
+.main a {
+    display: inline-block;
+}
+
+.main .select-pillow {
+    /*display: inline-block;*/
+    width: 13.08rem;
+    font-size: 1.32rem;
+    /*background-color: #3f2f31;*/
+    color: #d9a18f;
+    border-radius: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: absolute;
+    left: 5.9rem;
+    top: 6.98rem;
+    background:RGBA(57,37,36,0.9) ;
+}
+
+.main .select-sleep {
+    top: 13.92rem;
+}
+
+.main .select-assistant {
+    top: 20.84rem;
+}
+
+.main .select-choose {
+    top: 27.92rem;
+}

@@ -1,0 +1,23 @@
+body {
+    background-color: #442c2b;
+}
+
+/*公共部分修改*/
+.pillow-introduce {
+    padding-bottom: 4.26rem;
+}
+
+/*主体部分*/
+.main {
+    background-color: #6d5a5a;
+    padding-bottom: 4.2rem;
+    padding-top: 3.88rem;
+    /*padding:  4.2rem  4.13rem;*/
+}
+
+.main .introduce-text {
+    text-align: left;
+    width: 16.8rem;
+    font-size: 0.8rem;
+    margin: 0 auto;
+}

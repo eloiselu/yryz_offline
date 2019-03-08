@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+
+    <meta name="Keywords" content=""/>
+    <meta name="Description" content=""/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+
+    <!--禁止IOS识别号码 -->
+    <meta content="email=no" name="format-detection"/>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+
+    <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/shopping-cart.css">
+    <!--Font Awesome字体图标-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!--固定头部-->
+<div class="head-common">
+    <img class="head-img" src="../images/head-img.png" alt="">
+    <div class="head-text-wrap">
+        <img class="head-text" src="../images/head-text.png" alt="">
+    </div>
+</div>
+
+<!--模块名称部分-->
+<div class="head-name">
+    <span class="head-back"><i class="fa fa-angle-left"></i></span>
+    <span class="measure-step2-title cart-head">
+        <p class="cart-text">购物车</p>
+        <p>Choose Assistant</p>
+    </span>
+</div>
+
+<!--主体部分-->
+<div class="main">
+    <span class="no-data">您的购物车是空的哦！</span>
+    <ul class="cart-cont" id="cartCont">
+        <!--<li class="cart fix">-->
+            <!--&lt;!&ndash;左边介绍部分&ndash;&gt;-->
+            <!--<div class="cart-left">-->
+                <!--&lt;!&ndash;左边图片&ndash;&gt;-->
+                <!--&lt;!&ndash;&lt;!&ndash;左侧图片部分&ndash;&gt;&ndash;&gt;-->
+                <!--<span class="left-img">-->
+                        <!--<img class="cart-img" src="../images/assistant-img-cheese.png" alt="">-->
+                        <!--<div class="img-bottom"></div>-->
+                    <!--</span>-->
+                <!--&lt;!&ndash;右边文字&ndash;&gt;-->
+                <!--<span class="right-text">-->
+                    <!--<p class="text-title">芝士乳胶条枕/本白色</p>-->
+                    <!--<p class="text-subtitle">Cheese Latex</p>-->
+                    <!--<p class="text-money">&yen;499</p>-->
+                    <!--<p class="text-intro">颜色Color：浅灰 French grey</p>-->
+                    <!--<p class="text-intro">硬度Hardness：中低 Lower-mid</p>-->
+                    <!--<p class="text-intro">弹性Elasticity：高 High</p>-->
+                <!--</span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;增加数量&ndash;&gt;-->
+            <!--<div class="cart-right">-->
+                <!--<button type="button" class="but button-minus button-down">-</button>-->
+                <!--<input type="text" class="button-count" value="1" readonly="readonly">-->
+                <!--<button type="button" class="button-minus button-up">+</button>-->
+            <!--</div>-->
+        <!--</li>-->
+    </ul>
+</div>
+</body>
+<script src="../js/jQuery-2.1.4.min.js"></script>
+<script src="../js/flexible.js"></script>
+<script src="../js/commonJs.js"></script>
+<script src="../js/goBack.js"></script>
+<script src="../js/shopping-cart.js"></script>
+</html>

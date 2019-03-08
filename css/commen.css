@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*cursor: pointer;  显示小手*/
+}
+
+/*移动端样式*/
+html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*background-color: #fff;*/
+    font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+    color: #333;
+    height: 100%;
+}
+
+a, div, header, span {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 标签样式重写 */
+li,dd {
+    list-style: none;
+}
+
+/* button按钮的点击时候出现蓝色边框*/
+button {
+    outline: none;
+}
+
+/**清除浮动**/
+.fix:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both
+}
+
+/*字体隐藏显示'...'*/
+.text_ellipsis {
+    overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+    width: 20em;/*不允许出现半汉字截断*/
+}

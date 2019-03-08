@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>曲线报告</title>
+
+    <meta name="Keywords" content=""/>
+    <meta name="Description" content=""/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+
+    <!--禁止IOS识别号码 -->
+    <meta content="email=no" name="format-detection"/>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+
+    <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/choise.css">
+    <link rel="stylesheet" href="../css/report.css">
+    <!--Font Awesome字体图标-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<!--固定头部-->
+<div class="head-common">
+    <img class="head-img" src="../images/head-img.png" alt="">
+    <div class="head-text-wrap">
+        <img class="head-text" src="../images/head-text.png" alt="">
+    </div>
+</div>
+
+<div class="main">
+    <!--曲线报告部分-->
+    <div class="head-name">
+        <span class="head-back"><i class="fa fa-angle-left"></i></span>
+        <span class="report-head">
+        <p>曲线报告</p>
+        <p>YOUR REPORT</p>
+    </span>
+        <!--二维码-->
+        <span class="report-code"><img src="../images/purchaseQRcode.png" alt=""></span>
+    </div>
+
+    <div class="report-curve fix">
+        <!--左边头像和人物-->
+        <div class="report-curve-left">
+            <!--头像-->
+            <div class="curve-profile">
+                <img id="avatarImg" src="" alt="">
+            </div>
+            <!--曲线图-->
+            <div class="curve-person">
+                <!--侧面曲线图-->
+                <canvas id="sideImg"></canvas>
+            </div>
+        </div>
+        <!--右边分析数据-->
+        <div class="report-curve-right">
+            <ul>
+                <!--头部高度-->
+                <li>
+                    <!--数据部分-->
+                    <div class="data-height">
+                        <span class="data-height-text">头部高度</span>
+                        <span class="data-height-num" id="acNum"></span>
+                    </div>
+                    <!--数据描述-->
+                    <div class="data-text">
+                        <p id="acNumText">您的头部高度为－－，适宜枕的枕头为中低。请选择合适高度的枕头，如果枕高不合适将会使颈椎受损，严重时可能会引起病变。</p>
+                    </div>
+                </li>
+                <!--颈部高度-->
+                <li>
+                    <!--数据部分-->
+                    <div class="data-height">
+                        <span class="data-height-text">颈部高度</span>
+                        <span class="data-height-num" id="bcNum"></span>
+                    </div>
+                    <!--数据描述-->
+                    <div class="data-text">
+                        <p id="bcNumText">您的颈部部高度为－－，适宜将睡枕的颈部区域调整为中低，颈部完全没有支撑或者过高会让睡眠时的颈部压力增加，甚至引起供血不畅、压迫神经，以致四肢酸麻，请注意选择适合自己的睡枕。</p>
+                    </div>
+                </li>
+                <!--颈部高度-->
+                <li>
+                    <!--数据部分-->
+                    <div class="data-height">
+                        <span class="data-height-text">头颈高度差</span>
+                        <span class="data-height-num" id="headNeckNum"></span>
+                    </div>
+                    <!--数据描述-->
+                    <div class="data-text">
+                        <p id="headNeckNumText">头颈高度差小于9cm，您的颈部长度不高，请注意睡觉时头部距离颈部枕头边缘的距离要适中，否则会引起颈部的不适；</p>
+                    </div>
+                </li>
+                <!--颈部高度-->
+                <li>
+                    <!--数据部分-->
+                    <div class="data-height">
+                        <span class="data-height-text">头肩距离</span>
+                        <span class="data-height-num" id="headShoulderNum"></span>
+                    </div>
+                    <!--数据描述-->
+                    <div class="data-text">
+                        <p id="headShoulderNumText">大于10cm：您的头肩距离略大，在选择枕头时，需要较高的侧睡区，低矮的侧睡区会让您的肩部承受较大的压力，长时间睡眠会产生大小臂酸麻的现象。</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--底部部分-->
+    <div class="report-foot">
+        <p class="report-foot-title">H－U－M－L高度系统</p>
+        <p class="report-foot-subtitle">头高：1cm－低L－3.5cm－中低M－5cm－中高U－6.5cm－高H－8cm</p>
+        <p class="report-foot-subtitle">颈高：3cm－低L－5.5cm－中低M－7.5cm－中高U－9cm－高H－11cm</p>
+        <p class="report-foot-text">HUML高度标准，是经过大量实际测量及实验数据得到的结果，便捷的调整枕头高度至适合每个用户的高度。记住您的头部高度后可以在未来购买枕头时轻松惬意</p>
+    </div>
+</div>
+</body>
+<script src="../js/jQuery-2.1.4.min.js"></script>
+<script src="../plugins/layer/layer.js"></script>
+<script src="../plugins/pdfJs/pdf.js"></script>
+<script src="../plugins/pdfJs/pdf.worker.js"></script>
+<script src="../js/flexible.js"></script>
+<script src="../js/commonJs.js"></script>
+ <script src="../js/goBack.js"></script>
+<script src="../js/report.js"></script>
+</html>

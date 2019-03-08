@@ -1,0 +1,221 @@
+body {
+    background-color: #442c2b;
+}
+
+.head-name {
+    text-align: center;
+    color: #e1b397;
+}
+
+.head-name  .head-back {
+    margin-top: -.38rem;
+}
+
+/*主体部分*/
+.main {
+    position: relative;
+    background-color: #442c2b;
+}
+
+.measure-step1-Cal p {
+    display: inline-block;
+}
+
+/*我的曲线测量模块部分*/
+.head-name .measure-step5-title {
+    display: inline-block;
+    width: 10.06rem;
+    height: 1.96rem;
+    font-size: 0.9rem;
+    line-height: 1.96rem;
+    text-align: center;
+    margin-top: 1.16rem;
+    background-color: #32171c;
+    border-radius: 2.2rem;
+}
+
+/*左边头像和人物*/
+.measure5-curve-left{
+    padding-left: 1.34rem;
+    float: left;
+    padding-top: 0.7rem;
+}
+/*头像*/
+.curve-profile {
+    width: 5.16rem;
+    height: 5.16rem;
+    background-color: #6d4e40;
+    border-radius: 2.58rem;
+    margin-left: .5rem;
+}
+
+.curve-profile #avatarImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+/*人物*/
+.curve-person {
+    width: 6.16rem;
+    height: 17.98rem;
+    /*background-color: #6d4e40;*/
+    margin-top: 1.3rem;
+    overflow: hidden;
+}
+
+/*右边测量数据*/
+.measure5-curve-right {
+    float: left;
+    margin-left: 2rem;
+}
+
+/*数据部分*/
+.data-height {
+    text-align: center;
+    font-size: 0.74rem;
+    padding-top: 1.5rem;
+}
+
+.data-height-text {
+    display: inline-block;
+    width: 8.14rem;
+    height: 1.68rem;
+    line-height: 1.68rem;
+    background-color: #30181c;
+    color: #e1b397;
+    border-radius: 1.8rem;
+}
+
+.data-height-num {
+    display: inline-block;
+    width: 5.18rem;
+    height: 1.74rem;
+    line-height: 1.74rem;
+    background-color: #9f786c;
+    color: #1e0d06;
+    border-radius: 2rem;
+    margin-left: .4rem;
+    vertical-align: middle;
+}
+
+/*刻度部分*/
+.strip-wrap {
+    margin-top: .5rem;
+}
+
+/*刻度进度条部分*/
+.strip {
+    position: relative;
+    width: 13.58rem;
+    height: 1.7rem;
+    border-radius: 1.25rem;
+    background: rgba(39, 18, 21, .5);
+}
+
+/*进度条背景*/
+.strip-bar-back {
+    position: absolute;
+    left: 0.8rem;
+    top: .56rem;
+    width: 12rem;
+    height: .57rem;
+    border-radius: .27rem;
+    background: rgba(10, 4, 6, .5);
+}
+
+/*进度条*/
+.strip-bar {
+    width: 0;
+    height: .78rem;
+    border-radius: .36rem;
+    text-align: right;
+    margin-top: -.13rem;
+    background: url("../images/measure-step5-barimg.png") repeat-x;
+
+    transition: width .5s;
+    -moz-transition: width .5s; /* Firefox 4 */
+    -webkit-transition: width .5s; /* Safari 和 Chrome */
+    -o-transition: width .5s; /* Opera */
+}
+
+.strip-bar .strip-dot {
+    width: 1.17rem;
+    margin-top: -.18rem;
+    margin-right: -.5rem;
+}
+
+/*刻度文字*/
+.strip-text {
+    width: 12.16rem;
+    height: .60rem;
+    margin-left: 0.7rem;
+    margin-top: .3rem;
+    background: url("../images/measure-step5-scale.png") no-repeat;
+    background-size: cover;
+}
+
+/*底部模块部分*/
+.measure-step5-foot {
+    text-align: center;
+    margin-top: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.measure5-link{
+    display: inline-block;
+    width: 8.96rem;
+    height: 3rem;
+    background-color: #efb588;
+    color: #333333;
+    text-align: center;
+    font-size: 0.62rem;
+    border-radius: 2.2rem;
+    margin: 0 .93rem 0 .93rem;
+}
+
+.measure-step5-foot .foot-top {
+    margin-top: 0.48rem;
+}
+
+.measure-step5-foot .foot-down {
+    font-size: 0.88rem;
+}
+
+
+
+/*等待加载数据部分*/
+.load-model {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #442c2b;
+    text-align: center;
+    color: #eeb7a3;
+    z-index: 999;
+
+    /*display: none;*/
+}
+
+/*英文Calculating部分*/
+.measure-step1-Cal{
+    font-size: 1.66rem;
+    padding-top: 9.97rem;
+    padding-bottom: 2.37rem;
+    border-bottom: 0.13rem solid #a77e71;
+}
+
+/*曲线测量计算中部分*/
+.measure-step1-subCal {
+    padding-top: 1.2rem;
+    font-size: 1.28rem;
+}
+
+/**/
+.measure-step1-subimg {
+    width: 6.07rem;
+    height: 0.89rem;
+    margin-top: 0.6rem;
+}

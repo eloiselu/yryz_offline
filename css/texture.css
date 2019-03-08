@@ -1,0 +1,70 @@
+body {
+    background-color: #ffffff;
+}
+
+/*丰富材质底部高度*/
+.head-name {
+    background-color: #442c2b;
+    text-align: center;
+    color: #eeb7a3;
+}
+
+.tit-bottom {
+    display: inline-block;
+    width: 9.95rem;
+    height: 3.07rem;
+    line-height: 3.07rem;
+    background-color: #32171c;
+    font-size: 1.24rem;
+    text-align: center;
+    border-radius: 2.2rem;
+    margin-top: 2.09rem;
+    margin-bottom: 1.1rem;
+}
+
+/*主体部分*/
+.main {
+    background-color: #ffffff;
+}
+
+/*左部分*/
+.details-left {
+    width: 9.5rem;
+    margin-top: 0.6rem;
+    margin-left: 1.26rem;
+    margin-left: 0.8rem;
+    float: left;
+}
+/*左部分文字*/
+.details-left  .details-left-text {
+    font-size: 0.26rem;
+    color: #666666;
+    float: left;
+    width: 4.68rem;
+}
+.details-left  .left-text-title {
+    font-size: 0.48rem;
+    color: #000000;
+}
+.details-left  .left-text-subtitle {
+    font-size: 0.4rem;
+    color: #000000;
+}
+
+
+/*左部分图片*/
+.details-left  .details-left-img {
+    width: 4.26rem;
+    float: right;
+}
+
+/*右边图片部分*/
+ .details-bigimg{
+     float: right;
+     width: 12.99rem;
+     margin: 0.42rem;
+ }
+
+ .details-buttom {
+     /*margin-bottom: 0.3rem;*/
+ }

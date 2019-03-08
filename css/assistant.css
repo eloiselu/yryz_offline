@@ -1,0 +1,188 @@
+body {
+    background-color: #ffffff;
+}
+
+/*修改公共head*/
+.assistant-title {
+    width: 9rem;
+}
+
+.head-back {
+    /*margin-top: 1rem;*/
+}
+
+/*主体部分*/
+.main {
+    /*border-top: 0.05rem solid #ababab;*/
+    background-color: #ffffff;
+}
+
+.assistant {
+    display: flex;
+    flex-flow: row;
+}
+
+/*左边列表选择部分*/
+.assistant-left {
+    width: 5.88rem;
+    color: #333333;
+    font-size: 0.56rem;
+    border-right: 2px solid #ababab;
+}
+
+.assistant-left .assistant-li {
+    height: 2.14rem;
+    line-height: 2.14rem;
+}
+
+.assistant-left .assistant-li a {
+    display: block;
+    color: #333333;
+    padding-left: 0.44rem;
+    box-sizing: content-box;
+    border-left: 3px solid transparent;
+}
+
+.assistant-left .assistant-li a:hover,
+.assistant-left .assistant-li a.active {
+    color: #ac3028;
+    border-left: 3px solid #ac3028;
+}
+
+.assistant-left .assistant-li .list-small {
+    font-size: 0.46rem;
+    margin-right: 0.7rem;
+}
+
+/*右边详情*/
+.assistant-right {
+    flex: 1;
+}
+
+/*上边大图*/
+.assistant-right .top-img {
+    width: 100%;
+}
+
+/*右侧详情列表部分*/
+.assistant-right-list {
+
+}
+
+/*左侧图片部分*/
+.assistant-right-list li {
+    display: flex;
+    flex-flow: row;
+    padding-left: 0.43rem;
+    margin: .6rem 0;
+}
+
+/*左侧图片部分*/
+.list-left {
+    float: left;
+    background-color: #ddd;
+    padding: .3rem;
+    cursor: pointer;
+}
+
+.list-left img {
+    width: 4rem;
+    height: 3.3rem;
+}
+
+.list-left .img-bottom {
+    margin-top: -.15rem;
+    width: 4rem;
+    height: .96rem;
+    background: url("../images/assistant-img-bottom.png") no-repeat;
+    background-size: 4rem;
+}
+
+/*右侧文本部分*/
+.list-right {
+    flex: 1;
+    padding: 0 .5rem;
+}
+
+.list-right .list-title {
+    font-size: .55rem;
+    padding-top: 0.3rem;
+}
+
+.list-right .list-subtitle {
+    font-size: .38rem;
+}
+
+.list-right .buy-button-wrap {
+    text-align: right;
+}
+
+.list-right .buy-button {
+    width: 3.28rem;
+    height: .98rem;
+    line-height: .98rem;
+    font-size: .48rem;
+    color: #fff;
+    text-align: center;
+    background: #ba0909;
+    border-radius: .6rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.list-right .list-desc {
+    margin-top: .3rem;
+    font-size: .4rem;
+}
+
+/*老版本的样式*/
+/*详情*/
+.assistant-particulars {
+    margin-top: 0.56rem;
+}
+
+.assistant-right .particulars-img {
+    display: inline-block;
+    width: 4.7rem;
+    padding-left: 0.43rem;
+}
+
+/*右边介绍*/
+.assistant-right .particulars-text {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.particulars-text .text-title {
+    font-size: 0.55rem;
+}
+
+.particulars-text .text-subtitle {
+    font-size: 0.38rem;
+    padding-top: 0;
+}
+
+.particulars-text .text-join {
+    display: inline-block;
+    font-size: 0.48rem;
+    width: 3.28rem;
+    height: 0.98rem;
+    line-height: 0.98rem;
+    color: #ffffff;
+    background-color: #ba0909;
+    text-align: center;
+    border-radius: 2rem;
+    margin-left: 3.58rem;
+}
+
+.particulars-text .text-intro {
+    font-size: 0.4rem;
+}
+
+
+
+
+
+
+

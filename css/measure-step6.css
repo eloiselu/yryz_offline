@@ -1,0 +1,128 @@
+body {
+    background-color: #442c2b;
+}
+
+/*主体模块部分*/
+.main {
+    background-color: #442c2b;
+    text-align: center;
+}
+
+/*曲线测量部分*/
+.measure-step6-title {
+    display: inline-block;
+    width: 9.95rem;
+    height: 3.07rem;
+    line-height: 3.07rem;
+    background-color: #32171c;
+    font-size: 1.24rem;
+    text-align: center;
+    border-radius: 2.2rem;
+    margin-top: 2.09rem;
+}
+
+/*一人一枕描述部分*/
+.measure-step6-desc {
+    width: 19.59rem;
+    height: 4.49rem;
+    margin-top: 2.02rem;
+}
+
+/*一人一枕二维码部分*/
+.measure-step6-img {
+    width: 7.14rem;
+    height: 7.14rem;
+    margin-top: 1.56rem;
+}
+
+/*扫码保存描述部分*/
+.measure-step6-keep {
+    width: 15.2rem;
+    height: 1.74rem;
+    text-align: left;
+    font-size: 0.8rem;
+    margin: 0 auto;
+    padding-top: 1.53rem;
+    padding-bottom: 6.33rem;
+    color: #bd8d80;
+    background-color: #442c2b;
+}
+
+/*底部模块*/
+.measure-step6-footer {
+    background-color: #ffffff;
+}
+
+/*更多选择标题部分*/
+.measure-step6-footer .measure-step6-footitle {
+    height: 1.28rem;
+    line-height: 1.28rem;
+    background-color: #f4f4f4;
+    font-size: 0.6rem;
+    color: #ff0101;
+    padding-left: 0.74rem;
+    margin-top: 0.7rem;
+}
+
+.cart-cont {
+    margin-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+.cart-cont .cart {
+    float: left;
+    padding-left: 1rem;
+}
+
+.cart-cont  .cart-blockright {
+    padding-left: 1.6rem;
+}
+
+/*左边图片*/
+.cart .left-img {
+    float: left;
+    background-color: #ddd;
+    padding: .3rem;
+    cursor: pointer;
+}
+
+.cart .cart-img {
+    background-color: #ddd;
+    cursor: pointer;
+    width: 3.64rem;
+    height: 2.85rem;
+}
+
+.cart .img-bottom {
+    width: 3.64rem;
+    height: .74rem;
+    background-size: 3.64rem;
+}
+
+/*右边文字*/
+.cart .right-text {
+    float: left;
+    font-size: 0.32rem;
+    color: #333333;
+    padding-top: 0.22rem;
+    margin-left: .3rem;
+}
+
+.step6-title {
+    font-size: .5rem;
+    font-weight: 700;
+}
+
+.step6-details {
+    display: inline-block;
+    width: 2.76rem;
+    height: 0.83rem;
+    line-height: 0.83rem;
+    font-size: 0.38rem;
+    color: #ffffff;
+    text-align: center;
+    background-color: #ab8a59;
+    border-radius: 2rem;
+    margin-left: 2.8rem;
+}
+

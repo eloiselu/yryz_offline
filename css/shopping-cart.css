@@ -1,0 +1,153 @@
+body {
+    background-color: #ffffff;
+}
+
+/*修改公共head*/
+.head-name {
+    text-align: center;
+    background-color: #442c2b;
+    color: #d9a18f;
+}
+
+.head-back {
+    /*margin-top: 1rem;*/
+}
+
+.cart-head {
+    height: 2.86rem;
+    font-size: 0.86rem;
+    line-height: normal;
+    margin-top: 0.66rem;
+    margin-bottom: 0.7rem;
+    display: inline-block;
+    width: 8.62rem;
+    background-color: #30181c;
+    border-radius: 2rem;
+}
+
+.cart-text {
+    padding-top: 0.1rem;
+}
+
+/*主体部分*/
+.main {
+    background-color: #fcfcfc;
+}
+
+.cart-cont {
+    margin-top: 1.56rem;
+}
+
+.main .cart-cont .cart {
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 0.7rem;
+    padding-left: 0.46rem;
+    position: relative;
+}
+
+/*左边部分*/
+.cart .cart-left {
+    padding-top: 0.74rem;
+    padding-left: 0.46rem;
+    padding-bottom: 0.7rem;
+    width: 15.9rem;
+    float: left;
+
+}
+
+/*左边图片*/
+.cart .left-img {
+    float: left;
+    background-color: #ddd;
+    padding: .4rem;
+    cursor: pointer;
+}
+
+.cart .cart-img {
+    width: 5.96rem;
+    height: 4.74rem;
+}
+
+.cart .img-bottom {
+    margin-top: -.15rem;
+    width: 5.96rem;
+    height: 1.4rem;
+    background: url("../images/assistant-img-bottom.png") no-repeat;
+    background-size: 5.96rem;
+}
+
+/*右边文字*/
+.cart .right-text {
+    float: right;
+    font-size: 0.78rem;
+    color: #333333;
+    padding-top: 0.4rem;
+}
+
+.text-subtitle {
+    font-size: 0.52rem;
+    padding-top: 0.2rem;
+}
+
+.text-money {
+    font-size: 0.74rem;
+    color: #ba0909;
+}
+
+.text-intro {
+    width: 7.5rem;
+    font-size: 0.48rem;
+    padding-top: 0.2rem;
+}
+
+/*右边增加部分*/
+.cart-right {
+    float: right;
+    margin-top: 5.12rem;
+    margin-right: .8rem;
+    /*定位版*/
+    /*position: absolute;*/
+    /*left: 19.05rem;*/
+    /*top: 5.38rem;*/
+}
+
+.cart-right .button-minus {
+    font-size: 1rem;
+    background-color: #ffffff;
+    border: 0.01rem solid #ffffff;
+    cursor:pointer; /*鼠标变小手*/
+    vertical-align:middle;
+}
+
+.cart-right .but {
+    font-size: 1.3rem;
+}
+
+.cart-right .button-count {
+    text-align: center;
+    font-size: 0.5rem;
+    background-color: #f0f0f0;
+    width: 2.32rem;
+    height: 1.22rem;
+    line-height: 1.22rem;
+    border: 0;
+    vertical-align:middle;
+}
+
+.button-down {
+    padding-right: 0.5rem;
+}
+
+.button-up {
+    padding-left: 0.5rem;
+}
+
+.no-data {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: #666;
+}

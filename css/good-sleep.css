@@ -1,0 +1,63 @@
+body {
+    background-color: #442c2b;
+}
+
+/*修改公共*/
+.head-back {
+    /*margin-top: .55rem;*/
+}
+.main {
+    background-color: #442c2b;
+    height: 100%;
+    text-align: center;
+    padding-top: 1.98rem;
+    color: #d9a18f;
+}
+
+/*好睡专题*/
+.good-sleep {
+    background-color: #30181c;
+    width: 10.23rem;
+    height:3.46rem;
+    font-size: 1.03rem;
+    text-align: center;
+    border-radius: 2.2rem;
+    margin: 0 auto;
+}
+
+.good-sleep .sleep-title {
+    padding-top: .2rem;
+}
+
+/*曲线测量*/
+.goodsleep-link{
+    padding-top: 2.04rem;
+    display: block;
+    text-align: center;
+    cursor:pointer; /*变小手*/
+}
+
+
+.goodsleep-img1 {
+    /*height: 4.30rem;*/
+    width: 6.92rem;
+}
+.goodsleep-subtitle {
+    width: 6.98rem;
+    height: 2.06rem;
+    line-height: 2.06rem;
+    background-color: #30181c;
+    display: block;
+    font-size: 0.8rem;
+    text-align: center;
+    border-radius: 2.2rem;
+    color: #d9a18f;
+    margin: 0 auto;
+    margin-top: 0.82rem;
+}
+
+/*丰富材质*/
+.goodsleep-img2 {
+    /*height: 3.40rem;*/
+    width: 6.50rem;
+}

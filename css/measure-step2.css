@@ -1,0 +1,129 @@
+body {
+    background-color: #442c2b;
+    /*让视频超出宽度后不显示横向滚动条*/
+    overflow-x: hidden;
+}
+
+/*模块名称部分*/
+.head-name {
+    background-color: #442c2b;
+    text-align: center;
+    color: #eeb7a3;
+}
+
+.head-name .head-back {
+    margin-top: 0;
+    left: 1.1rem;
+}
+
+/*曲线测量部分*/
+.measure-step2-title {
+    display: inline-block;
+    width: 9.95rem;
+    height: 3.07rem;
+    line-height: 3.07rem;
+    background-color: #32171c;
+    font-size: 1.24rem;
+    text-align: center;
+    border-radius: 2.2rem;
+    margin-top: 2.09rem;
+    margin-left: 2rem;
+}
+
+/*"侧"部分*/
+.measure-step2-subtitle {
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 1rem;
+    width: 3.02rem;
+    height: 3.02rem;
+    background-color: #32171c;
+    border-radius: 1.51rem;
+    padding-top: 1rem;
+    margin-left: 2.46rem;
+}
+
+.measure-step2-take {
+    display: inline-block;
+    width: 3.02rem;
+    height: 3.02rem;
+    /* padding-top: 2rem; */
+    /* box-sizing: content-box; */
+    vertical-align: bottom;
+    margin-left: .5rem;
+}
+
+.measure-step2-take img {
+    width: 100%;
+    height: 100%;
+}
+
+/*主体模块部分*/
+.main {
+    /*background-color: #442c2b;*/
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*bottom: 0;*/
+    position: relative;
+}
+
+/*拍照部分*/
+.photograph {
+    height: 37.76rem;
+    height: 30.22rem;
+}
+
+/*摄像头*/
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 100%;*/
+    height: 37.76rem;
+    height: 30.22rem;
+    /*object-fit: cover;*/
+}
+
+.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 100%;*/
+    /*height: 37.76rem;*/
+}
+
+.picture {
+    /*width: 100%;*/
+    /*height: 37.76rem;*/
+}
+
+/*人物图片*/
+.measure-step2-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: 37.76rem;*/
+    height: 30.22rem;
+    vertical-align: middle; /*清除图片底部边框问题*/
+    /*background: #fff;*/
+    opacity: .6;
+    filter: alpha(opacity=0.6);
+}
+
+/*底部相机按钮图片*/
+.measure-step2-camera {
+    background-color: #d9cfbb;
+    text-align: center;
+    padding-top: 1.16rem;
+    padding-bottom: 1rem;
+}
+
+.measure-step2-camera a {
+    display: inline-block;
+}
+
+.measure-step2-camera img {
+    width: 3.15rem;
+    height: 3.15rem;
+}

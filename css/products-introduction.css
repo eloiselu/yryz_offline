@@ -1,0 +1,252 @@
+body {
+    background-color: #ffffff;
+}
+
+/*修改公共head*/
+.products-head {
+    font-size: 0.46rem;
+    width: 5.7rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    background-color: #9f786c;
+    color: #000000;
+    margin-top: 0.55rem;
+    margin-bottom: 0.43rem;
+}
+
+/*主体部分*/
+.main {
+    background-color: #ffffff;
+
+}
+
+.pro-img {
+    /*position: relative;*/
+}
+
+/*图片介绍部分*/
+.products-img {
+    width: 100%;
+}
+
+.products-imgtext {
+    width: 100%;
+    background-color: #f5f4f6;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 0.76rem;
+    text-align: center;
+    /*position: absolute;*/
+    /*top:21rem;*/
+}
+
+.imgtext-hg {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/*商品描述*/
+.products-describe {
+    /*width: 16.74rem;*/
+    margin-top: 0.98rem;
+    margin-left: 0.68rem;
+    text-align: right;
+}
+
+.products-title {
+    font-size: 0.88rem;
+    text-align: left;
+}
+
+.products-subtitle {
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+.products-text {
+    margin-top: 0.2rem;
+    font-size: 0.48rem;
+    text-align: left;
+}
+
+.products-select {
+    display: inline-block;
+    width: 4.34rem;
+    height: 1.44rem;
+    line-height: 1.44rem;
+    text-align: center;
+    margin-bottom: 0.4rem;
+    margin-right: 1.32rem;
+    background-color: #dddddd;
+    color: #000;
+}
+
+.pro-link {
+    font-size: 0.7rem;
+    color: #000000;
+}
+
+.products-select a:hover {
+    color: #000;
+}
+
+/*选择规格数量部分*/
+.products-specification {
+    border-top: 0.05rem solid #e0e0e0;
+    border-bottom: 0.3rem solid #e0e0e0;
+    height: 3rem;
+    font-size: 0.58rem;
+    position: relative;
+    color: #000;
+}
+
+/*添加数量部分*/
+.choose-num {
+    float: left;
+    margin-top: .8rem;
+    margin-left: 0.68rem
+}
+
+.choose-num span {
+    float: left;
+    height: 1rem;
+    line-height: 1rem;
+    margin-right: .3rem;
+}
+
+.choose-num .num-btn {
+    float: left;
+    width: 1rem;
+    height: 1rem;
+    line-height: .83rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    background: #ccc;
+}
+/*添加按钮*/
+.choose-num .num-btn#addNum {
+    font-size: .8rem;
+}
+/*禁用状态*/
+.choose-num .num-btn.forbidden {
+    color: #ccc;
+    cursor: not-allowed;
+    background-color: #ededed;
+}
+
+.choose-num .num-text {
+    float: left;
+    width: 2rem;
+    height: 1rem;
+    text-align: center;
+    font-size: .5rem;
+}
+
+/*加入购物车按钮*/
+.shopping-btn {
+    float: right;
+    width: 5.6rem;
+    height: 1.6rem;
+    border-radius: .8rem;
+    background: #b18d59;
+    color: #fff;
+    font-size: .66rem;
+    margin-top: .5rem;
+    margin-right: 1.32rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+/*请选择规格数量*/
+.specification-num {
+    display: inline-block;
+    padding-left: 0.68rem;
+}
+
+/*请选择规格数量 箭头*/
+.specification-gt {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    /*background-color: #007aff;*/
+    text-align: center;
+    position: absolute;
+    top: .1rem;
+    right: 1.7rem;
+}
+
+.specification-gt a {
+    color: #000;
+}
+
+/*商品参数*/
+.products-parameter {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.parameter-text {
+    font-size: 0.9rem;
+    padding-left: 0.68rem;
+    padding-top: 0.46rem;
+}
+
+.parameter-join {
+    width: 5.6rem;
+    height: 1.64rem;
+    line-height: 1.64rem;
+    text-align: center;
+    background-color: #b08f5a;
+    border-radius: 2.2rem;
+    position: absolute;
+    right: 0.38rem;
+}
+
+.par-join {
+    font-size: 0.74rem;
+    color: #ffffff;
+}
+
+/* 弹框遮罩层 */
+.pop-shade {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9998;
+}
+
+/* 选择购物数量弹框 */
+.pop-module {
+    display: none;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    /*top: 0;*/
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 1);
+    /* background: #0b1829; */
+    border: 1px solid #999;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.pop-module .pop-close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 38px;
+    height: 38px;
+    background: url("../images/close.png");
+    cursor: pointer;
+    z-index: 10000;
+}

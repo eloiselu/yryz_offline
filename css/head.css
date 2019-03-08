@@ -1,0 +1,45 @@
+
+.head-common {
+    position: relative;
+    width: 100%;
+    background-color: #392524;
+    text-align: center;
+    /*height: 6.10rem;*/
+}
+
+.head-img {
+    width: 3.55rem;
+    height: 2.20rem;
+    margin-top: 0.72rem;
+}
+
+.head-text {
+    width: 6.24rem;
+    height: 0.97rem;
+    margin-top: 0.42rem;
+    margin-bottom: 0.7rem;
+}
+
+.head-name {
+    position: relative;
+}
+
+.head-back {
+    position: absolute;
+    left: 2.1rem;
+    top: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-top: -1rem;
+    border-radius: 1rem;
+    border: solid .05rem #efb588;
+    cursor: pointer;
+}
+
+.head-back i {
+    position: absolute;
+    top: .15rem;
+    left: .65rem;
+    font-size: 1.5rem!important;
+    color: #efb588;
+}

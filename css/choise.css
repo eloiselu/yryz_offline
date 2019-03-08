@@ -1,0 +1,96 @@
+body {
+	background-color: #442c2b;
+}
+
+/*主体部分*/
+.main {
+	text-align: center;
+}
+
+/*文字title*/
+.choise-title {
+	height: 1.76rem;
+	line-height: 1.76rem;
+	text-align: center;
+	background-color: #442c2b;
+}
+
+.choise-title p {
+	color: #e9b88f;
+	font-size: 0.54rem;
+}
+
+/*图片部分*/
+.choise-img {
+	width: 100%;
+}
+
+.choise-link {
+	position: relative;
+	margin: 0 auto;
+	width: 4.72rem;
+	cursor: pointer;
+}
+
+/*选枕按钮*/
+.choise-button {
+	margin: 0 auto;
+	display: block;
+	height: 2.38rem;
+	width: 5.72rem;
+	background-color: #efb688;
+	text-align: center;
+	border-radius: 1rem;
+	position: absolute;
+	top: -1.13rem;
+	padding: .2rem;
+}
+
+.choise-button p {
+	font-size: .7rem;
+	color: #262525;
+}
+
+.choise-button .but {
+	padding-top: .2rem;
+}
+
+/*三个按钮*/
+.choise-btn {
+	text-align: center;
+	margin-top: 2.6rem;
+	padding-bottom: 5rem;
+}
+
+.choise-btn .btn-link {
+	display: inline-block;
+	width: 5.24rem;
+	height: 2.36rem;
+	font-size: .7rem;
+	color: #eec2a9;
+	background-color: #30191d;
+	border-radius: 1rem;
+	margin: 0 1rem;
+}
+
+.choise-btn .btn-link .btn-p {
+	margin-top: .2rem;
+}
+
+/*底部文字*/
+.choise-foot {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	text-align: center;
+	background-color: #2f1a19;
+	padding-top: .3rem;
+	padding-bottom: .4rem;
+}
+
+.choise-foot p {
+	color: #efd2b0;
+	font-size: .22rem;
+}

@@ -1,0 +1,73 @@
+/*主体的背景颜色，一般来按最下边的一个元素的颜色处理*/
+body {
+    background-color: #442c2b;
+}
+
+.head-name {
+    width: 11.16rem;
+    height: 3.74rem;
+    /* line-height: 3.74rem; */
+    background-color: #32171c;
+    text-align: center;
+    color: #f0c0a1;
+    border-radius: 2.2rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+.head-name .head-back {
+    margin-left: -6.5rem;
+}
+
+/*P标签修改*/
+.userlist-text {
+    margin-top: 0.2rem;
+    line-height: 1.13rem;
+    font-size: 1.06rem;
+}
+
+.head-name .text {
+    padding-top: .7rem;
+}
+
+/*主体部分*/
+.main {
+    background-color: #442c2b;
+}
+
+.userlist {
+    width: 19.95rem;
+    margin: 0 auto;
+    margin-top: 1.16rem;
+}
+
+.userlist .userlist-dot {
+    display: inline-block;
+    background-color: #6d4e40;
+    width: 4.83rem;
+    height: 4.83rem;
+    border-radius: 4.83rem;
+    margin: 1.09rem 0.81rem 1.09rem 0.81rem;
+}
+
+.userlist .userlist-link {
+    display: inline-block;
+    width: 4.83rem;
+    height: 4.83rem;
+}
+
+.userlist .userlist-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 100%;
+}
+
+/*底部文字*/
+.userlist-foot {
+    font-size: 1.56rem;
+    color: #000000;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
