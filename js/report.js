@@ -22,6 +22,8 @@ report.prototype.getDataByParam = function () {
 
         // 绑定数据
         that.setData();
+        // 绑定小程序二维码
+        that.setQRCodeImg();
         // 绑定左侧头像
         that.setAvatarImg();
         // 绑定曲线数据
@@ -79,6 +81,11 @@ report.prototype.setData = function () {
         $("#headShoulderNumText").html("小于10cm：您的头肩距离略低，在选择枕头时，需要适中的的侧睡高度，在侧睡时，睡枕过高的侧睡区域会由于压迫神经给您的颈部带来不适，请注意调整");
     }
 
+};
+
+// 绑定小程序二维码
+report.prototype.setQRCodeImg = function () {
+    $("#reportCode").attr('src', commonJs.apiUrl + this.data.qrcode_url);
 };
 
 // 绑定左侧头像

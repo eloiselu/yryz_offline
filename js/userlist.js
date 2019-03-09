@@ -42,7 +42,7 @@ userlist.prototype.getUserData = function (page) {
     var data = {};
     data.device_sn = commonJs.deviceCode;
     data.page = (page || 1);
-    data.pageSize = "100";//this.pageSize
+    data.pageSize = "10000";//this.pageSize
     var url = commonJs.apiUrl + "/webpillow/list.html";
     ajax.load(url, data, function (resultData) {
         console.log(resultData);
