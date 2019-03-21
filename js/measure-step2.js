@@ -74,9 +74,14 @@ measureStep2.prototype.initEvent = function () {
     $('.take').on('click', function () {
         // 使用canvas进行拍照
         var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
         // 设置canvas的宽为屏幕宽度, 高为视频元素高度
         canvas.width = document.body.clientWidth;
         canvas.height = that.videoInfo.eleHeight;
+
+        // 设置反转
+        ctx.translate(canvas.width, 0);
+        ctx.scale(-1, 1);
 
         // 设置显示比例，视频实际高度/视频元素高度
         var proportion = that.videoInfo.videoHeight / that.videoInfo.eleHeight;
@@ -88,11 +93,13 @@ measureStep2.prototype.initEvent = function () {
         var cutHeight = canvas.height * proportion;
 
         // 绘制canvas图形
-        canvas.getContext('2d').drawImage(that.video, cutX, 0, cutWidth, cutHeight, 0, 0, canvas.width, canvas.height);
+        ctx.drawImage(that.video, cutX, 0, cutWidth, cutHeight, 0, 0, canvas.width, canvas.height);
         // 设置图片
         document.getElementById('picture').src = canvas.toDataURL("image/png");
+
         // 设置反转
-        $("#picture").css({transform: "rotateY(180deg)"});
+        // $("#picture").css({transform: "rotateY(180deg)"});
+
         // var img = new Image();
         // img.src = canvas.toDataURL("image/png");
 

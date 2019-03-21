@@ -62,6 +62,11 @@ body {
     /*background-color: #6d4e40;*/
     margin-top: 1.3rem;
     overflow: hidden;
+    /*border: 1px solid red;*/
+}
+
+.curve-person img {
+    height: 17.98rem;
 }
 
 /*右边测量数据*/

@@ -33,8 +33,7 @@ measureStep5Page.prototype.initData = function () {
     if (avatarId) {
         // 根据用户id获取数据
         this.getDataByAvatarid(avatarId);
-    }
-    else {
+    } else {
         // 根据测量参数获取数据
         this.getDataByParam();
     }
@@ -283,8 +282,33 @@ measureStep5Page.prototype.setAvatarImg = function () {
 
 // 绑定曲线数据
 measureStep5Page.prototype.setCurveImg = function () {
+    var that = this;
+
     // 渲染PDF
-    this.renderingPDF(commonJs.apiUrl + (this.data.bodyImage || this.data.body_url), "sideImg");
+    // this.renderingPDF(commonJs.apiUrl + (this.data.bodyImage || this.data.body_url), "sideImg");
+
+    // 渲染图片
+    $("#sideImg").attr({"src": commonJs.apiUrl + this.data.body_url});
+
+    // 获取原本图片的宽度
+    var img = new Image();
+    img.src = commonJs.apiUrl + that.data.body_url;
+    img.onload = function(){
+        // 计算图片偏移宽度
+        var leftWidth = that.data.left_point * ($("#sideImg").width() / img.width);
+        $("#sideImg").css({"transform": "translateX(-" + leftWidth + "px)"})
+
+        console.log("imgWidth: ", img.width);
+        console.log("sideImgWidth: ", $("#sideImg").width());
+
+        // 隐藏等待页面
+        $(".load-model").hide();
+    }
+
+
+    setTimeout(function () {
+
+    }, 600);
 };
 
 // 渲染PDF
@@ -318,7 +342,7 @@ measureStep5Page.prototype.renderingPDF = function (fileURL, canvasId) {
             page.render(renderContext);
 
             // 左移一些canvas
-            $(canvas).css({"transform": "translateX(-" + ((canvas.width - $(".curve-person").width())/2) + "px)"})
+            $(canvas).css({"transform": "translateX(-" + ((canvas.width - $(".curve-person").width()) / 2) + "px)"})
 
             // 隐藏等待页面
             $(".load-model").hide();

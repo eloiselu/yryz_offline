@@ -57,6 +57,10 @@
     overflow: hidden;
 }
 
+.curve-person img {
+    height: 16.4rem;
+}
+
 /*右边测量数据*/
 .report-curve-right {
     float: left;

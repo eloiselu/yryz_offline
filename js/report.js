@@ -96,7 +96,25 @@ report.prototype.setAvatarImg = function () {
 // 绑定曲线数据
 report.prototype.setCurveImg = function () {
     // 渲染PDF
-    this.renderingPDF(commonJs.apiUrl + (this.data.bodyImage || this.data.body_url), "sideImg");
+    // this.renderingPDF(commonJs.apiUrl + (this.data.bodyImage || this.data.body_url), "sideImg");
+
+    // 渲染图片
+    $("#sideImg").attr({"src": commonJs.apiUrl + this.data.body_url});
+
+    // 获取原本图片的宽度
+    var img = new Image();
+    img.src = commonJs.apiUrl + that.data.body_url;
+    img.onload = function(){
+        // 计算图片偏移宽度
+        var leftWidth = that.data.left_point * ($("#sideImg").width() / img.width);
+        $("#sideImg").css({"transform": "translateX(-" + leftWidth + "px)"})
+
+        console.log("imgWidth: ", img.width);
+        console.log("sideImgWidth: ", $("#sideImg").width());
+
+        // 隐藏等待页面
+        $(".load-model").hide();
+    }
 };
 
 // 渲染PDF
