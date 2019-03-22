@@ -37,6 +37,11 @@ measureStep5Page.prototype.initData = function () {
         // 根据测量参数获取数据
         this.getDataByParam();
     }
+
+    // 判断是否显示"侧面图"与"正面图"按钮
+    if (localStorage.getItem("sideFile")) {
+        $(".show-img").show();
+    }
 };
 
 // 根据用户id获取数据
@@ -244,7 +249,8 @@ measureStep5Page.prototype.dataURLToFile = function (dataURL, filename) {
 
 // 绑定右侧数据
 measureStep5Page.prototype.setData = function () {
-    console.log("a", this.data.ac);
+    // 获取id
+    this.avatarId = this.data.data_id || this.data.id;
 
     // 数据为mm，转换为cm
     var ac = Math.round(this.data.ac * 10) / 100;
@@ -288,12 +294,12 @@ measureStep5Page.prototype.setCurveImg = function () {
     // this.renderingPDF(commonJs.apiUrl + (this.data.bodyImage || this.data.body_url), "sideImg");
 
     // 渲染图片
-    $("#sideImg").attr({"src": commonJs.apiUrl + this.data.body_url});
+    $("#sideImg").attr({"src": commonJs.apiUrl + (this.data.bodyImage || this.data.body_url)});
 
     // 获取原本图片的宽度
     var img = new Image();
-    img.src = commonJs.apiUrl + that.data.body_url;
-    img.onload = function(){
+    img.src = commonJs.apiUrl + (this.data.bodyImage || this.data.body_url);
+    img.onload = function () {
         // 计算图片偏移宽度
         var leftWidth = that.data.left_point * ($("#sideImg").width() / img.width);
         $("#sideImg").css({"transform": "translateX(-" + leftWidth + "px)"})
@@ -352,10 +358,37 @@ measureStep5Page.prototype.renderingPDF = function (fileURL, canvasId) {
 
 };
 
-
 //初始化事件
 measureStep5Page.prototype.initEvent = function () {
+    var that = this;
 
+    $('#createReport').on('click', function () {
+        $(location).attr("href", ("../view/report.html?avatarId=" + that.avatarId));
+    });
+
+    // 侧面图按钮点击事件
+    $('.show-img-btn').on('click', function () {
+        // $("#showImgPop > img").attr("src", localStorage.getItem("sideFile"));
+        // $("#showImgPop").show();
+        // $("#pop-shadow").show();
+
+        var imgSrc = localStorage.getItem($(this).attr("data-type"));
+
+        var image = new Image();
+        image.src = imgSrc;
+        image.onload = function () {
+
+            $("#showImgPop > img").attr("src", imgSrc).css({width: image.width / 2, height: image.height / 2});
+
+            $("#showImgPop").css({width: image.width / 2, height: image.height / 2}).show();
+            $(".pop-shade").show();
+        }
+    });
+
+    // 弹层的点击关闭事件
+    $('.pop-module, .pop-shade').on('click', function () {
+        $(".pop-module, .pop-shade").hide();
+    });
 };
 
 $(function () {

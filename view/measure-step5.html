@@ -54,6 +54,10 @@
     <div class="head-name">
         <span class="head-back"><i class="fa fa-angle-left"></i></span>
         <span class="measure-step5-title">我的曲线</span>
+        <span class="show-img">
+            <a href="javascript:;" class="show-img-btn" data-type="sideFile">侧面图</a>
+            <a href="javascript:;" class="show-img-btn" data-type="positiveFile">正面图</a>
+        </span>
     </div>
 
     <div class="measure5-curve fix">
@@ -171,7 +175,7 @@
 
     <!--底部模块部分-->
     <div class="measure-step5-foot">
-        <a href="../view/report.html" class="measure5-link">
+        <a href="javascript:;" class="measure5-link" id="createReport">
             <p class="foot-top">Report</p>
             <p class="foot-down">生成报告</p>
         </a>
@@ -184,6 +188,11 @@
     </div>
 
 </div>
+
+<div class="pop-module" id="showImgPop">
+    <img src="" alt="">
+</div>
+<div class="pop-shade"></div>
 
 </body>
 <script src="../js/jQuery-2.1.4.min.js"></script>

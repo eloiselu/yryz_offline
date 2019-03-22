@@ -7,7 +7,7 @@ body {
     color: #e1b397;
 }
 
-.head-name  .head-back {
+.head-name .head-back {
     margin-top: -.38rem;
 }
 
@@ -34,12 +34,36 @@ body {
     border-radius: 2.2rem;
 }
 
+/*显示侧面图与正面图按钮*/
+.head-name .show-img {
+    display: none;
+    position: absolute;
+    top: 1.16rem;
+    right: .3rem;
+}
+
+.head-name .show-img > a {
+    display: inline-block;
+    height: 1.96rem;
+    font-size: 0.6rem;
+    line-height: 1.96rem;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0 .3rem;
+    margin: 0 .1rem;
+    background-color: #32171c;
+    color: #e1b397;
+    background-color: #efb588;
+    color: #333;
+}
+
 /*左边头像和人物*/
-.measure5-curve-left{
+.measure5-curve-left {
     padding-left: 1.34rem;
     float: left;
     padding-top: 0.7rem;
 }
+
 /*头像*/
 .curve-profile {
     width: 5.16rem;
@@ -167,7 +191,7 @@ body {
     margin-bottom: 2rem;
 }
 
-.measure5-link{
+.measure5-link {
     display: inline-block;
     width: 8.96rem;
     height: 3rem;
@@ -188,7 +212,6 @@ body {
 }
 
 
-
 /*等待加载数据部分*/
 .load-model {
     position: absolute;
@@ -205,7 +228,7 @@ body {
 }
 
 /*英文Calculating部分*/
-.measure-step1-Cal{
+.measure-step1-Cal {
     font-size: 1.66rem;
     padding-top: 9.97rem;
     padding-bottom: 2.37rem;
@@ -223,4 +246,34 @@ body {
     width: 6.07rem;
     height: 0.89rem;
     margin-top: 0.6rem;
+}
+
+
+/*侧面与正面图弹出框部分*/
+.pop-module {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*border: 1px solid red;*/
+    z-index: 10000;
+}
+
+.pop-module img {
+    width: 80%;
+    margin: auto;
+}
+
+.pop-shade {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 9998;
 }

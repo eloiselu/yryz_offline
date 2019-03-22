@@ -14,11 +14,37 @@ report.prototype.init = function () {
 report.prototype.getDataByParam = function () {
     var that = this;
 
+    // 获取链接中的参数
+    var avatarId = window.location.search ? window.location.search.split('?')[1].split('=')[1] : "";
+
     // 获取数据id，如果存在，则不再进行接口数据获取
-    var dataId = localStorage.getItem("cl_data_id");
-    if (dataId) {
+    that.data = localStorage.getItem(avatarId);
+    if (that.data) {
         // 设置数据
-        that.data = JSON.parse(localStorage.getItem(dataId));
+        that.data = JSON.parse(that.data);
+
+        // 绑定数据
+        that.setData();
+        // 绑定小程序二维码
+        that.setQRCodeImg();
+        // 绑定左侧头像
+        that.setAvatarImg();
+        // 绑定曲线数据
+        that.setCurveImg();
+        return;
+    }
+
+    // 获取头像接口
+    var data = {};
+    data.data_id = avatarId;
+    var url = commonJs.apiUrl + "/webpillow/detail.html";
+    ajax.load(url, data, ajaxFun);
+
+    function ajaxFun(resultData) {
+        console.log("根据用户id获取数据: ", resultData);
+
+        // 设置数据
+        that.data = resultData.content;
 
         // 绑定数据
         that.setData();
@@ -95,15 +121,17 @@ report.prototype.setAvatarImg = function () {
 
 // 绑定曲线数据
 report.prototype.setCurveImg = function () {
+    var that = this;
+
     // 渲染PDF
     // this.renderingPDF(commonJs.apiUrl + (this.data.bodyImage || this.data.body_url), "sideImg");
 
     // 渲染图片
-    $("#sideImg").attr({"src": commonJs.apiUrl + this.data.body_url});
+    $("#sideImg").attr({"src": commonJs.apiUrl + (this.data.bodyImage || this.data.body_url)});
 
     // 获取原本图片的宽度
     var img = new Image();
-    img.src = commonJs.apiUrl + that.data.body_url;
+    img.src = commonJs.apiUrl + (this.data.bodyImage || this.data.body_url);
     img.onload = function(){
         // 计算图片偏移宽度
         var leftWidth = that.data.left_point * ($("#sideImg").width() / img.width);
