@@ -24,9 +24,12 @@ indexPage.prototype.init = function () {
 // 运行系统打开首页后，设置本机机器唯一标识
 indexPage.prototype.initFingerprint = function () {
     var fingerprint = new Fingerprint().get();
-    localStorage.setItem("fingerprint", fingerprint);
+    // 判断如果存在则添加
+    if (!localStorage.getItem("fingerprint")) {
+        localStorage.setItem("fingerprint", fingerprint);
+        console.log("没有机器码，已经生成机器码。")
+    }
     console.log(fingerprint);
-
 };
 
 // 初始化轮播图
